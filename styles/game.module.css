@@ -1,24 +1,31 @@
-.container{
+.container {
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
-.box{
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(100,100,100,0.3);
+
+.box {
+    width: 64px;
+    height: 64px;
+    /* border: 1px solid rgba(100, 100, 100, 0.3); */
+    background-image: url("../public/Pixels/Center.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
-.player{
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(100,100,100,0.3);
-    background-color: green ;
+
+.player {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    background-color: green;
 }
-.apple{
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgba(100,100,100,0.3);
+
+.apple {
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
     background-color: red;
 }
