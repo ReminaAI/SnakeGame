@@ -14,7 +14,7 @@ export default function Controls() {
 
 
 
-    function RecreateArray(board, currPlay, applePos) {
+    function RecreateArray() {
         setBoard((previousMatriz) => {
             return previousMatriz.map((l, line) => l.map((e, col) => {
                 for (const element of playerNew) {
@@ -24,7 +24,7 @@ export default function Controls() {
             }))
         })
     }
-    function RecreateArrayApple(board, currPlay, applePos) {
+    function RecreateArrayApple(applePos) {
         setBoard((previousMatriz) => {
             return previousMatriz.map((l, line) => l.map((e, col) => {
                 return line === applePos[0] && col === applePos[1] ? "apple" : e
@@ -48,7 +48,7 @@ export default function Controls() {
 
 
         RecreateArray(board, playerNew, apple)
-        RecreateArrayApple(board, playerNew, apple)
+        RecreateArrayApple(apple)
 
 
     }, [playerNew, apple])
@@ -113,7 +113,7 @@ export default function Controls() {
             document.removeEventListener("keyup", noMore)
         }
 
-    }, [clicking])
+    }, [clicking, playerNew, board.length])
 
 
     return (<div className={styles.container}>

@@ -1,17 +1,22 @@
 {
-  "name": "swipe_book",
+  "name": "snake_game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ReminaAI.github.io/SnakeGame",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "next": "^12.1.6",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "eslint": "8.17.0",
